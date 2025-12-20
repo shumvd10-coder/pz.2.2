@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
     <img src="assets/img/banner.png" alt="Баннер главной страницы">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<header class="header">
+    <div class="header__content">Самый вкусный Рево-кофе</div>
+      <nav class="header__nav">
+         <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+             <a class="nav__link" href="#">О нас</a>
+            </li>
+            <li class="nav__item">
+             <a class="nav__link" href="#">Продукция</a>
+            </li>
+            <li class="nav__item">
+             <a class="nav__link" href="#">Особенности</a>
+            </li>
+            <li class="nav__item">
+             <a class="nav__link" href="#">Подарочные наборы</a>
+            </li>
+            <li class="nav__item">
+             <a class="nav__link" href="#">Коллекции</a>
+            </li>
+         </ul>
+      </nav>
+    </div>
+</header>
+
     <header>
         <h1>Самый вкусный Рево-кофе</h1>
         <nav>
@@ -20,114 +45,127 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
-                    <img src="assets/icons/coffee_shop.png" alt="Иконка кофейный магазин">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Внезапно, базовые сценарии поведения пользователей формируют глобальную экономическую сеть и&nbsp;при этом&nbsp;&mdash; смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.</p>
+    <main class="main">
+        <section id="about" class="section about-section">
+            <h2 class="section__title">Почему выбирают наш кофе</h2>
+            <div class="about-section_grid">
+                <article class="card card--featured">
+                    <img class="card__icon" src="assets/icons/coffee_shop.png" alt="Иконка кофейный магазин">
+                    <h3 class="card__title">ЗКофейни премиум-класса</h3>
+                    <p class="card__text">Внезапно, базовые сценарии поведения пользователей формируют глобальную экономическую сеть и&nbsp;при этом&nbsp;&mdash; смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/beans.png" alt="Иконка зерен">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>В&nbsp;частности, начало повседневной работы по&nbsp;формированию позиции требует определения и&nbsp;уточнения анализа существующих паттернов поведения.</p>
+                <article class="card">
+                    <img class="card__icon" src="assets/icons/beans.png" alt="Иконка зерен">
+                    <h3 class="card__title">Отборные зерна</h3>
+                    <p class="card__text">В&nbsp;частности, начало повседневной работы по&nbsp;формированию позиции требует определения и&nbsp;уточнения анализа существующих паттернов поведения.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/beans_pack.png" alt="Иконка пакет зерен">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Современные технологии достигли такого уровня, что перспективное планирование требует определения и&nbsp;уточнения прогресса профессионального сообщества.</p>
+                <article class="card">
+                    <img class="card__icon" src="assets/icons/beans_pack.png" alt="Иконка пакет зерен">
+                    <h3 class="card__title">Эксклюзивная упаковка</h3>
+                    <p class="card__text">Современные технологии достигли такого уровня, что перспективное планирование требует определения и&nbsp;уточнения прогресса профессионального сообщества.</p>
                 </article>
 
-                <article>
-                    <img src="assets/icons/coffee_machine.png" alt="Иконка кофемашины">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Каждый из&nbsp;нас понимает очевидную вещь: высокое качество позиционных исследований в&nbsp;значительной степени обусловливает важность стандартных подходов!</p>
+                <article class="card">
+                    <img class="card__icon" src="assets/icons/coffee_machine.png" alt="Иконка кофемашины">
+                    <h3 class="card__title">Технологии обжарки</h3>
+                    <p class="card__text">Каждый из&nbsp;нас понимает очевидную вещь: высокое качество позиционных исследований в&nbsp;значительной степени обусловливает важность стандартных подходов!</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div> 
-                <article>
-                    <h4>Заголовок четвертого уровня</h4>
-                    <img src="assets/img/w_yellow_coffee.png" alt="Утренний кофе">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Безусловно, сплочённость команды профессионалов способствует подготовке и&nbsp;реализации экономической целесообразности принимаемых решений.</p>
+        <section id="products" class="section products-section">
+            <h2 class="section__title">Заголовок второго уровня</h2>
+            <div class="products-section__grid"> 
+                <article class="products-card">
+                    <h4 class="product-card__subtitle">Заголовок четвертого уровня</h4>
+                    <img class="product-card__image" src="assets/img/w_yellow_coffee.png" alt="Утренний кофе">
+                    <h3 class="product-card__title">Заголовок третьего уровня</h3>
+                    <p class="product-card__text">Безусловно, сплочённость команды профессионалов способствует подготовке и&nbsp;реализации экономической целесообразности принимаемых решений.</p>
                 </article>
 
-                <article>
-                    <h4>Заголовок четвертого уровня</h4>
-                    <img src="assets/img/orange_pack.png" alt="Оригинальный кофе">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Внезапно, акционеры крупнейших компаний будут рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок.</p>
+                <article class="product-card product-card--featured">
+                    <h4 class="product-card__subtitle">Заголовок четвертого уровня</h4>
+                    <img class="product-card__image" src="assets/img/orange_pack.png" alt="Оригинальный кофе">
+                    <h3 class="product-card__title">Заголовок третьего уровня</h3>
+                    <p class="product-card__text">Внезапно, акционеры крупнейших компаний будут рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок.</p>
                 </article>
 
-                <article>
-                    <h4>Заголовок четвертого уровня</h4>
-                    <img src="assets/img/w_blue_pack.png" alt="Кофе на каждый день">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Принимая во&nbsp;внимание показатели успешности, современная методология разработки однозначно фиксирует необходимость переосмысления внешнеэкономических политик.</p>
+                <article class="product-card">
+                    <h4 class="product-card__subtitle">Заголовок четвертого уровня</h4>
+                    <img class="product-card__image" src="assets/img/w_blue_pack.png" alt="Кофе на каждый день">
+                    <h3 class="product-card__title">Заголовок третьего уровня</h3>
+                    <p class="product-card__text">Принимая во&nbsp;внимание показатели успешности, современная методология разработки однозначно фиксирует необходимость переосмысления внешнеэкономических политик.</p>
                 </article>
 
-                <article>
-                    <h4>Заголовок четвертого уровня</h4>
-                    <img src="assets/img/w_brown_pack.png" alt="Кофе 'Дам да'">
-                    <h3>Заголовок третьего уровня</h3>
-                    <p>Противоположная точка зрения подразумевает, что интерактивные прототипы освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы.</p>
+                <article class="product-card">
+                    <h4 class="product-card__subtitle">Заголовок четвертого уровня</h4>
+                    <img class="product-card__image" src="assets/img/w_brown_pack.png" alt="Кофе 'Дам да'">
+                    <h3 class="product-card__title">Заголовок третьего уровня</h3>
+                    <p class="product-card__text">Противоположная точка зрения подразумевает, что интерактивные прототипы освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы.</p>
                 </article>
              </div>
          </section>
 
-         <section>
-             <h2>Заголовок второго уровня</h2>
-             <div>
-                <img src="assets/img/giftpack.png" alt="Подарочный набор">
-                <h4>Заголовок четвертого уровня</h4>
-                <h3>Заголовок третьего уровня</h3>
-                <p>Наше дело не&nbsp;так однозначно, как может показаться: новая модель организационной деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи.</p>
-                <img src="assets/icons/IC_coffee.png" alt="Зерна">
-                <h5>Заголовок пятого уровня</h5>
-                <p>Приятно, граждане, наблюдать, как базовые сценарии поведения пользователей лишь добавляют фракционных разногласий и&nbsp;описаны максимально подробно.</p>
-                <img src="assets/icons/IC_Mountain.png" alt="Гора">
-                <h5>Заголовок пятого уровня</h5>
-                <p>С&nbsp;другой стороны, постоянный количественный рост и&nbsp;сфера нашей активности прекрасно подходит для реализации поставленных обществом задач.</p>
+         <section id="gift" class="section gift-section">
+             <h2 class="section__title">Подарочные наборы</h2>
+             <div class="gift-section__content">
+                <div class="gift-card">
+                    <img class="gift-card__image" src="assets/img/giftpack.png" alt="Подарочный набор">
+                    <div class="gift-card__info">
+                        <h4 class="gift-card__subtitle">Подарочный набор</h4>
+                        <h3 class="gift-card__title">"Комплимент"</h3>
+                        <p class="gift-card__text">Наше дело не&nbsp;так однозначно, как может показаться: новая модель организационной деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи.</p>
+                        <div class="gift-card__features">
+                            <div class="gift-feature"></div>
+                                <img class="gift-feature__icon" src="assets/icons/IC_coffee.png" alt="Зерна">
+                                <h5 class="gift-feature__title">4 сорта кофе</h5>
+                                <p class="gift-feature__text">Приятно, граждане, наблюдать, как базовые сценарии поведения пользователей лишь добавляют фракционных разногласий и&nbsp;описаны максимально подробно.</p>
+                            <div>
+
+                            <div class="gift-card__feature">
+                                <img src="assets/icons/IC_Mountain.png" alt="Гора">
+                                <h5 class="gift-feature__title">Высокогорные зёрна</h5>
+                                <p class="gift-feature__text">С&nbsp;другой стороны, постоянный количественный рост и&nbsp;сфера нашей активности прекрасно подходит для реализации поставленных обществом задач.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
-                    <img src="assets/img/brown_pack.png" alt="Комбо кофе 'Дам Да'">
-                    <h4>Заголовок четвертого уровня</h4>
-                    <h5>Заголовок пятого уровня</h5>
-                    <p>Прежде всего, понимание сути ресурсосберегающих технологий представляет собой интересный эксперимент проверки первоочередных требований.</p>
+        <section id="collections" class="section collections-section">
+            <h2 class="section__title">Коллекции кофе</h2>
+            <div class="collections-section__grid">
+                <article class="collection-card">
+                    <img class="collection-card__image" src="assets/img/brown_pack.png" alt="Комбо кофе 'Дам Да'">
+                    <h4 class="collection-card__subtitle">"Дам да"</h4>
+                    <h5 class="collection-card__type">В зёрнах</h5>
+                    <p class="collection-card__text">Прежде всего, понимание сути ресурсосберегающих технологий представляет собой интересный эксперимент проверки первоочередных требований.</p>
                 </article>
 
-                <article>
-                    <img src="assets/img/blue_pack.png" alt="Комбо кофе на каждый день">
-                    <h4>Заголовок четвертого уровня</h4>
-                    <h5>Заголовок пятого уровня</h5>
-                    <p>Идейные соображения высшего порядка, а&nbsp;также высокое качество позиционных исследований создаёт предпосылки для стандартных подходов.</p>
+                <article class="collection-card collection-card--featured">
+                    <img class="collection-card__image" src="assets/img/blue_pack.png" alt="Комбо кофе на каждый день">
+                    <h4 class="collection-card__subtitle">На каждый день</h4>
+                    <h5 class="collection-card__type">Молотый</h5>
+                    <p class="collection-card__text">Идейные соображения высшего порядка, а&nbsp;также высокое качество позиционных исследований создаёт предпосылки для стандартных подходов.</p>
                 </article>
 
-                <article>
-                    <img src="assets/img/red_pack.png" alt="Комбо кофе Honey">
-                    <h4>Заголовок четвертого уровня</h4>
-                     <h5>Заголовок пятого уровня</h5>
-                     <p>Не&nbsp;следует, однако, забывать, что выбранный нами инновационный путь создаёт предпосылки для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.</p>
+                <article class="collection-card">
+                    <img class="collection-card__image" src="assets/img/red_pack.png" alt="Комбо кофе Honey">
+                    <h4 class="collection-card__subtitle">Медовый</h4>
+                     <h5 class="collection-card__type">Ароматизированный</h5>
+                     <p class="collection-card__text">Не&nbsp;следует, однако, забывать, что выбранный нами инновационный путь создаёт предпосылки для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.</p>
                  </article>
              </div>
         </section>
     </main>
 
-    <footer>
-        <p></p>
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <p class="footer__text">Сложно сказать, почему явные признаки победы институционализации, превозмогая сложившуюся непростую экономическую ситуацию, преданы социально-демократической анафеме. Следует отметить, что повышение уровня гражданского сознания предопределяет высокую востребованность анализа существующих паттернов поведения.</p>
+        </div>
     </footer>
 </body>
 </html>
